@@ -24,7 +24,7 @@ if (!is_null($events['events'])) {
 			$messages = [
 				'type' => 'image',
 				'originalContentUrl' => 'https://afternoon-everglades-58271.herokuapp.com/86381.jpg',
-				'previewImageUrl' => 'http://staging03c.cloudapp.net/7or/web/',
+				'previewImageUrl' => 'https://afternoon-everglades-58271.herokuapp.com/86381.jpg',
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
