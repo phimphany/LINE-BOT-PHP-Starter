@@ -24,10 +24,17 @@ if (!is_null($events['events'])) {
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
+// 			$data = [
+// 				'replyToken' => $replyToken,
+// 				'messages' => [$messages],
+// 			];
+			
 			$data = [
-				'replyToken' => $replyToken,
-				'messages' => [$messages],
+				'type' => 'image',
+				'originalContentUrl' => "https://afternoon-everglades-58271.herokuapp.com/86381.jpg",
+				'previewImageUrl' => "http://staging03c.cloudapp.net/7or/web/",
 			];
+			
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 
