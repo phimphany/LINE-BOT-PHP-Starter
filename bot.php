@@ -29,13 +29,13 @@ if (!is_null($events['events'])) {
 // 					'previewImageUrl' => 'https://afternoon-everglades-58271.herokuapp.com/86381.jpg',
 // 				];
 				        $actions = [
-					  'type': 'uri',
-					    'linkUri': 'http://staging0c.cloudapp.net/7or/web/',
-					    'area': [
-						'x': 0,
-						'y': 0,
-						'width': 520,
-						'height': 1040
+					  'type' => 'uri',
+					    'linkUri'=> 'http://staging0c.cloudapp.net/7or/web/',
+					    'area'=> [
+						'x'=> 0,
+						'y'=> 0,
+						'width'=> 520,
+						'height'=> 1040
 					    ]
 					];
 
