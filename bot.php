@@ -23,10 +23,16 @@ if (!is_null($events['events'])) {
 // 			];
 			$messages = null;
 			if ($text == '7or') {
+// 				$messages = [
+// 					'type' => 'image',
+// 					'originalContentUrl' => 'https://afternoon-everglades-58271.herokuapp.com/86381.jpg',
+// 					'previewImageUrl' => 'https://afternoon-everglades-58271.herokuapp.com/86381.jpg',
+// 				];
 				$messages = [
-					'type' => 'image',
-					'originalContentUrl' => 'https://afternoon-everglades-58271.herokuapp.com/86381.jpg',
-					'previewImageUrl' => 'https://afternoon-everglades-58271.herokuapp.com/86381.jpg',
+				  'type' => 'imagemap',
+				  'baseUrl' => 'https://afternoon-everglades-58271.herokuapp.com/86381.jpg',
+				  'altText' => '7or mockup',
+				  'baseSize' => [ 'height' => 1040, 'width' => 1040]
 				];
 			}
 			// Make a POST Request to Messaging API to reply to sender
