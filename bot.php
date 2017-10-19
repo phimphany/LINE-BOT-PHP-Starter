@@ -44,7 +44,7 @@ if (!is_null($events['events'])) {
 					  'baseUrl' => 'https://afternoon-everglades-58271.herokuapp.com/86381.jpg',
 					  'altText' => '7or mockup',
 					  'baseSize' => [ 'height' => 1040, 'width' => 1040],
-					  'actions' => [$actions]
+// 					  'actions' => [$actions]
 					];
 			}
 			// Make a POST Request to Messaging API to reply to sender
