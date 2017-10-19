@@ -21,12 +21,14 @@ if (!is_null($events['events'])) {
 // 				'type' => 'text',
 // 				'text' => $text
 // 			];
-			$messages = [
-				'type' => 'image',
-				'originalContentUrl' => 'https://afternoon-everglades-58271.herokuapp.com/86381.jpg',
-				'previewImageUrl' => 'https://afternoon-everglades-58271.herokuapp.com/86381.jpg',
-			];
-
+			$messages = null;
+			if ($text == '7or') {
+				$messages = [
+					'type' => 'image',
+					'originalContentUrl' => 'https://afternoon-everglades-58271.herokuapp.com/86381.jpg',
+					'previewImageUrl' => 'https://afternoon-everglades-58271.herokuapp.com/86381.jpg',
+				];
+			}
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			
