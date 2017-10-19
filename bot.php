@@ -28,12 +28,24 @@ if (!is_null($events['events'])) {
 // 					'originalContentUrl' => 'https://afternoon-everglades-58271.herokuapp.com/86381.jpg',
 // 					'previewImageUrl' => 'https://afternoon-everglades-58271.herokuapp.com/86381.jpg',
 // 				];
-				$messages = [
-				  'type' => 'imagemap',
-				  'baseUrl' => 'https://afternoon-everglades-58271.herokuapp.com/86381.jpg',
-				  'altText' => '7or mockup',
-				  'baseSize' => [ 'height' => 1040, 'width' => 1040]
-				];
+				        $actions = [
+					  'type': 'uri',
+					    'linkUri': 'http://staging0c.cloudapp.net/7or/web/',
+					    'area': [
+						'x': 0,
+						'y': 0,
+						'width': 520,
+						'height': 1040
+					    ]
+					];
+
+					$messages = [
+					  'type' => 'imagemap',
+					  'baseUrl' => 'https://afternoon-everglades-58271.herokuapp.com/86381.jpg',
+					  'altText' => '7or mockup',
+					  'baseSize' => [ 'height' => 1040, 'width' => 1040],
+					  'actions' => [$actions]
+					];
 			}
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
